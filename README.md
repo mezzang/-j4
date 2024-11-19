@@ -1,1 +1,1 @@
-# -j4
+# knu_seminar
