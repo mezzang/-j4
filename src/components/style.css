@@ -1,0 +1,113 @@
+/* KNU_SEMINAR/src/components/style.css */
+.header {
+    height: 191px;
+    position: relative;
+    width: 1002px;
+}
+
+.header-image {
+    height: 150px;
+    left: 146px;
+    position: absolute;
+    top: 26px;
+    width: 121px;
+}
+
+.header-content {
+    height: 117px;
+    left: 277px;
+    position: absolute;
+    top: 23px;
+    width: 461px;
+}
+
+.header-title {
+    -webkit-text-stroke: 2px #a64040;
+    color: #f9f235;
+    font-family: "Jersey 20-Regular", Helvetica;
+    font-size: 105px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 25px;
+    white-space: nowrap;
+    width: 461px;
+}
+
+.header-logo {
+    height: 41px;
+    left: 2px;
+    position: absolute;
+    top: 0;
+    width: 73px;
+}
+
+.header-logo-text {
+    color: #de0404;
+    font-family: "Jaro-Regular", Helvetica;
+    font-size: 30px;
+    font-weight: 400;
+    left: 6px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 2px;
+    white-space: nowrap;
+    width: 62px;
+}
+
+.header-subtitle {
+    color: #fd2323;
+    font-family: "Ink Free-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 404px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 144px;
+    width: 211px;
+}
+
+.search-bar {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #a64040;
+    border-radius: 90px;
+    height: 56px;
+    overflow: hidden;
+    position: relative;
+    width: 847px;
+}
+
+.search-container {
+    height: 34px;
+    left: 26px;
+    position: absolute;
+    top: 11px;
+    width: 749px;
+}
+
+.search-input {
+    color: #000000;
+    font-family: "Inder-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 5px;
+}
+
+.search-button {
+    background-image: url('../assets/images/돋보기.png'); 
+    background-size: 100% 100%;
+    height: 34px;
+    left: 775px;
+    position: absolute;
+    top: 11px;
+    width: 34px;
+}

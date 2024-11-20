@@ -1,0 +1,32 @@
+{
+  "name": "knu_seminar",
+  "version": "1.0.0",
+  "description": "> 경북대학교 IT대 학우들을 위한 세미나 정보 통합 서비스  \r > **\"최강 컴학\"**의 정신을 담아 최강 **J4** 팀이 선보이는 편리하고 직관적인 세미나 모아보기 플랫폼!",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

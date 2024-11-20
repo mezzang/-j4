@@ -1,0 +1,1 @@
+// KNU_SEMINAR/src/components/SeminarItem.js
