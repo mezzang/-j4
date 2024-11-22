@@ -42,7 +42,7 @@ const Subtitle = styled.div`
 
 const Header = () => (
   <HeaderContainer>
-    <Logo src="image.png" alt="Logo" />
+    <Logo src="/호반우.png" alt="호반우" />
     <OverlapGroup>
       <Title>Seminar.zip</Title>
       <Subtitle>for knu_it students</Subtitle>
