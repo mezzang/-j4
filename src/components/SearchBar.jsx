@@ -7,7 +7,7 @@ const SearchBarContainer = styled.div`
   position: absolute;
   width: 847px;
   height: 56px;
-  top: 310px;
+  top: 560px;
   left: 330px;
   background-color: #ffffff;
   border-radius: 90px;

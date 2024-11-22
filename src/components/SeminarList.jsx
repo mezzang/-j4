@@ -7,7 +7,7 @@ import SeminarItem from "./SeminarItem";
 const SeminarListContainer = styled.div`
   position: absolute;
   width: 1013px;
-  top: 840px;
+  top: 1090px;
   left: 247px;
   border-radius: 15px;
   overflow: hidden;
