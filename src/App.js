@@ -1,19 +1,20 @@
-// KNU_SEMINAR/App.js
 import React from "react";
-import GlobalStyles from "./styles/GlobalStyles";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
-import FilterBar from "./components/FilterBar";
+import Filters from "./components/Filters";
 import SeminarList from "./components/SeminarList";
+import Footer from "./components/Footer";
 
-const App = () => (
-  <>
-    <GlobalStyles />
-    <Header />
-    <SearchBar />
-    <FilterBar />
-    <SeminarList />
-  </>
-);
+function App() {
+  return (
+    <div className="app">
+      <Header />
+      <SearchBar />
+      <Filters />
+      <SeminarList />
+      <Footer />
+    </div>
+  );
+}
 
 export default App;

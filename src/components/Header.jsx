@@ -1,53 +1,19 @@
-import styled from "styled-components";
+// components/Header.js
+import React from "react";
 
-const HeaderContainer = styled.div`
-  position: absolute;
-  width: 1002px;
-  height: 191px;
-  top: 277px;
-  left: 244px;
-`;
-
-const Logo = styled.img`
-  position: absolute;
-  width: 121px;
-  height: 150px;
-  top: 26px;
-  left: 146px;
-`;
-
-const OverlapGroup = styled.div`
-  position: absolute;
-  width: 461px;
-  height: 117px;
-  top: 23px;
-  left: 277px;
-`;
-
-const Title = styled.div`
-  font-size: 105px;
-  color: ${(props) => props.theme.colors.primary};
-  font-family: ${(props) => props.theme.fonts.header};
-  -webkit-text-stroke: 2px #a64040;
-`;
-
-const Subtitle = styled.div`
-  font-size: 25px;
-  color: #fd2323;
-  font-family: "Ink Free-Regular", Helvetica, sans-serif;
-  position: absolute;
-  top: 144px;
-  left: 404px;
-`;
-
-const Header = () => (
-  <HeaderContainer>
-    <Logo src="/호반우.png" alt="호반우" />
-    <OverlapGroup>
-      <Title>Seminar.zip</Title>
-      <Subtitle>for knu_it students</Subtitle>
-    </OverlapGroup>
-  </HeaderContainer>
-);
+function Header() {
+  return (
+    <div className="title">
+      <img className="image" src="image.png" alt="Logo" />
+      <div className="overlap-group">
+        <div className="text-wrapper-24">Seminar.zip</div>
+        <div className="KNU-MARK">
+          <div className="text-wrapper-25">KNU</div>
+        </div>
+      </div>
+      <div className="text-wrapper-26">for knu_it students</div>
+    </div>
+  );
+}
 
 export default Header;

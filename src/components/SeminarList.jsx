@@ -1,61 +1,31 @@
-import styled from "styled-components";
+import React from "react";
+import SeminarItem from "./SeminarItem";
 
-const Table = styled.table`
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-`;
+function SeminarList() {
+  const seminars = [
+    {
+      id: 192,
+      title: "소프트웨어 재난 연구센터 11월 초청 세미나 안내",
+      author: "이민지",
+      category: "4차산업, 교양",
+      date: "2024.11.11.",
+    },
+  ];
 
-const TableHeader = styled.th`
-  padding: 10px;
-  border: 1px solid #edbcbc;
-  background-color: #fffbf6;
-`;
-
-const TableRow = styled.tr`
-  &:nth-child(even) {
-    background-color: #fffbf6;
-  }
-`;
-
-const TableData = styled.td`
-  padding: 10px;
-  border: 1px solid #edbcbc;
-`;
-
-const seminars = [
-  {
-    id: 192,
-    title: "소프트웨어 재난 연구센터 11월 초청 세미나 안내",
-    author: "이민지",
-    category: "4차산업, 교양",
-    date: "2024.11.11.",
-  },
-];
-
-const SeminarList = () => (
-  <Table>
-    <thead>
-      <TableRow>
-        <TableHeader>번호</TableHeader>
-        <TableHeader>제목</TableHeader>
-        <TableHeader>작성자</TableHeader>
-        <TableHeader>카테고리</TableHeader>
-        <TableHeader>작성날짜</TableHeader>
-      </TableRow>
-    </thead>
-    <tbody>
+  return (
+    <div className="seminar-list">
+      <div className="seminar-header">
+        <div>번호</div>
+        <div>제목</div>
+        <div>작성자</div>
+        <div>카테고리</div>
+        <div>작성날짜</div>
+      </div>
       {seminars.map((seminar) => (
-        <TableRow key={seminar.id}>
-          <TableData>{seminar.id}</TableData>
-          <TableData>{seminar.title}</TableData>
-          <TableData>{seminar.author}</TableData>
-          <TableData>{seminar.category}</TableData>
-          <TableData>{seminar.date}</TableData>
-        </TableRow>
+        <SeminarItem key={seminar.id} {...seminar} />
       ))}
-    </tbody>
-  </Table>
-);
+    </div>
+  );
+}
 
 export default SeminarList;
