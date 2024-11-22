@@ -1,3 +1,4 @@
+// Theme.js
 const theme = {
     colors: {
       background: "#fae8dc",

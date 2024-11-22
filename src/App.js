@@ -1,3 +1,4 @@
+// App.js
 import React from "react";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
@@ -7,12 +8,14 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="app">
+    <div className="desktop">
+      <div className="overlap">
       <Header />
       <SearchBar />
       <Filters />
       <SeminarList />
       <Footer />
+      </div>
     </div>
   );
 }

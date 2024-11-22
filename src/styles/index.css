@@ -1,0 +1,32 @@
+/* index.css */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inder-Regular', Helvetica, sans-serif;
+    background-color: #fae8dc;
+  }
+  
+  .desktop {
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden;
+  }
+  
+  .overlap {
+    position: relative;
+    width: 1500px;
+    height: 1291px;
+    top: -267px;
+    left: -33px;
+  }
+  
+  .frame {
+    position: absolute;
+    width: 1440px;
+    height: 942px;
+    top: 0;
+    left: 33px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 400px 400px;
+  }
+  
