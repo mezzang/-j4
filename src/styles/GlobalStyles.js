@@ -8,16 +8,17 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: "Inder-Regular", Helvetica, sans-serif;
-    background-color: #fae8dc;
+    font-family: ${({ theme }) => theme.fonts.body};
+    background-color: ${({ theme }) => theme.colors.background};
     overflow-x: hidden;
   }
 
+  @media (max-width: 768px) {
   .desktop {
-    width: 1440px;
-    height: 1024px;
-    overflow: hidden;
+    width: 100%;
+    height: auto;
   }
+}
 
   .overlap {
     position: relative;
