@@ -3,7 +3,7 @@ import React from "react";
 function Filters() {
   const categories = [
     "국제 교류",
-    "전공심화",
+    "전공",
     "창업",
     "네트워킹",
     "경진대회",
@@ -15,13 +15,16 @@ function Filters() {
   const etcOptions = ["식사 제공", "사전 신청", "무료", "유료"];
   const locations = ["IT대", "글로벌 플라자", "경상대", "공대"];
   const times = ["9-10", "10-11", "11-12", "12-1", "1-2", "2-3", "3-4", "4-5", "5-6", "6시 이후"];
+  const days = ["월", "화", "수", "목", "금", "토", "일"];
 
   return (
     <div className="filters">
+      <FilterSection title="요일" tags={days} />
+      <FilterSection title="시간" tags={times} />
+      <FilterSection title="장소" tags={locations} />
       <FilterSection title="카테고리" tags={categories} />
       <FilterSection title="기타" tags={etcOptions} />
-      <FilterSection title="장소" tags={locations} />
-      <FilterSection title="시간" tags={times} />
+      
     </div>
   );
 }
