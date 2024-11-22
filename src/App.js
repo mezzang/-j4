@@ -10,11 +10,15 @@ function App() {
   return (
     <div className="desktop">
       <div className="overlap">
-      <Header />
-      <SearchBar />
-      <Filters />
-      <SeminarList />
-      <Footer />
+        <div className = "rectangle">
+            <div className = "frame">
+                <Header />
+                <SearchBar />
+                <Filters />
+                <SeminarList />
+                <Footer />
+            </div>
+        </div>
       </div>
     </div>
   );

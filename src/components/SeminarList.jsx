@@ -7,12 +7,13 @@ import SeminarItem from "./SeminarItem";
 const SeminarListContainer = styled.div`
   position: absolute;
   width: 1013px;
-  top: 1090px;
+  height: 445px;
+  top: 870px;  
   left: 247px;
-  border-radius: 15px;
-  overflow: hidden;
-  border: 2px solid #edbdbd;
-  box-shadow: 0px 6px 4px #d8baa4;
+  border-radius: 15px;  /* 모서리를 둥글게 설정 */
+  overflow: hidden;  /* 내용이 넘칠 경우 숨김 */
+  border: 2px solid #edbdbd;  /*테두리 추가*/
+  box-shadow: 0px 6px 4px #d8baa4; /* 그림자 추가*/
   z-index: 0; /* 가장 아래 */
 `;
 

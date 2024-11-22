@@ -15,7 +15,7 @@ const Image = styled.img`
   position: absolute; //조상요소를 기준으로 위치가 지정
   width: 121px;
   height: 150px;
-  top: 270px;
+  top: 50px;
   left: 146px;
 `;
 
@@ -23,7 +23,7 @@ const OverlapGroup = styled.div`
   position: absolute;
   width: 461px;
   height: 117px;
-  top: 273px;
+  top: 43px;
   left: 277px;
 `;
 

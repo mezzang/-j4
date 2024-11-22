@@ -7,7 +7,7 @@ const FiltersContainer = styled.div`
   position: absolute;
   width: 1002px;
   height: 219px;
-  top: 630px;
+  top: 410px;
   left: 330px;
   z-index: 1; /* SearchBar 아래 */
 `;
