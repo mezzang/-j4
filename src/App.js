@@ -9,7 +9,6 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="desktop">
-      <div className="overlap">
         <div className = "rectangle">
             <div className = "frame">
                 <Header />
@@ -19,7 +18,6 @@ function App() {
                 <Footer />
             </div>
         </div>
-      </div>
     </div>
   );
 }

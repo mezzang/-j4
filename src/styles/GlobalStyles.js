@@ -31,6 +31,17 @@ const GlobalStyles = createGlobalStyle`
       border-radius: 0; /* 둥근 모서리 제거 */
     }
   }
+    .frame {
+  position: absolute;
+  width: 1440px;
+  height: 942px;
+  top: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); /* 그라데이션 효과 */
+  border-radius: 0px 0px 400px 400px; /* 하단 모서리에 곡선 추가 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+  z-index: -1; /* 다른 모든 요소 뒤로 배치 */
+}
+
 `;
 
 export default GlobalStyles;
