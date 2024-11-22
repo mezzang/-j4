@@ -5,7 +5,9 @@ const theme = {
       white: "#ffffff",
       text: "#000000",
       primary: "#a64040",
-      hover: "#edbdbd",
+      border: "#edbcbc",
+      shadow: "#d8baa4",
+      highlight: "#ffd69d",
     },
     fonts: {
       body: "'Inder-Regular', Helvetica, sans-serif",

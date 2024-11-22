@@ -1,4 +1,3 @@
-// GlobalStyles.js
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -12,6 +11,20 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Inder-Regular", Helvetica, sans-serif;
     background-color: #fae8dc;
     overflow-x: hidden;
+  }
+
+  .desktop {
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden;
+  }
+
+  .overlap {
+    position: relative;
+    width: 1500px;
+    height: 1291px;
+    top: -267px;
+    left: -33px;
   }
 `;
 
