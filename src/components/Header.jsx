@@ -5,16 +5,16 @@ const Title = styled.div`
   position: absolute;
   width: 1002px;
   height: 191px;
-  top: 277px;
+  top: 77px;
   left: 244px;
   z-index: 3; /* 항상 최상단 */
 `;
 
 const Image = styled.img`
-  position: absolute;
+  position: absolute; //조상요소를 기준으로 위치가 지정
   width: 121px;
   height: 150px;
-  top: 26px;
+  top: 20px;
   left: 146px;
 `;
 
@@ -26,7 +26,7 @@ const OverlapGroup = styled.div`
   left: 277px;
 `;
 
-const TextWrapper24 = styled.div`
+const Name = styled.div`
   width: 461px;
   -webkit-text-stroke: 2px #a64040;
   font-family: "Jersey 20-Regular", Helvetica, sans-serif;
@@ -35,35 +35,38 @@ const TextWrapper24 = styled.div`
   font-size: 105px;
   white-space: nowrap;
 `;
+// knu 마크
+const Knumark = styled.div`
+  width: 211px;
+  font-family: "Ink Free-Regular", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #de0404;
+  font-size: 25px;
+`;
 
-const TextWrapper25 = styled.div`
+// sub title
+const Subtitle = styled.div`
   width: 62px;
   font-family: "Jaro-Regular", Helvetica, sans-serif;
   font-weight: 400;
-  color: #de0404;
+  color: #fd2323;
   font-size: 30px;
   white-space: nowrap;
 `;
 
-const TextWrapper26 = styled.div`
-  width: 211px;
-  font-family: "Ink Free-Regular", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #fd2323;
-  font-size: 25px;
-`;
-
 function Header() {
   return (
-    <Title>
+    // 전체 헤더를 감싸는 컨테이너
+    <Title>  
       <Image src="호반우.png" alt="호반우" />
-      <OverlapGroup>
-        <TextWrapper24>Seminar.zip</TextWrapper24>
+      <OverlapGroup>  
+        <Knumark>KNU</Knumark>
+        <Name>Seminar.zip</Name>
         <div className="KNU-MARK">
-          <TextWrapper25>KNU</TextWrapper25>
+            <Subtitle>for knu_it students</Subtitle>
         </div>
       </OverlapGroup>
-      <TextWrapper26>for knu_it students</TextWrapper26>
+      
     </Title>
   );
 }
