@@ -1,5 +1,32 @@
 import React from "react";
+import styled from "styled-components";
 import SeminarItem from "./SeminarItem";
+
+// Styled Components
+const SeminarListContainer = styled.div`
+  position: absolute;
+  width: 1013px;
+  top: 825px;
+  left: 247px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid #edbdbd;
+  box-shadow: 0px 6px 4px #d8baa4;
+`;
+
+const SeminarHeader = styled.div`
+  display: flex;
+  background-color: #fffbf6;
+  border-bottom: 2px solid #edbcbc;
+`;
+
+const HeaderItem = styled.div`
+  flex: 1;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+`;
 
 function SeminarList() {
   const seminars = [
@@ -13,18 +40,18 @@ function SeminarList() {
   ];
 
   return (
-    <div className="seminar-list">
-      <div className="seminar-header">
-        <div>번호</div>
-        <div>제목</div>
-        <div>작성자</div>
-        <div>카테고리</div>
-        <div>작성날짜</div>
-      </div>
+    <SeminarListContainer>
+      <SeminarHeader>
+        <HeaderItem>번호</HeaderItem>
+        <HeaderItem>제목</HeaderItem>
+        <HeaderItem>작성자</HeaderItem>
+        <HeaderItem>카테고리</HeaderItem>
+        <HeaderItem>작성날짜</HeaderItem>
+      </SeminarHeader>
       {seminars.map((seminar) => (
         <SeminarItem key={seminar.id} {...seminar} />
       ))}
-    </div>
+    </SeminarListContainer>
   );
 }
 
