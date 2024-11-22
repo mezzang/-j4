@@ -8,7 +8,7 @@ const ListContainer = styled.div`
   position: absolute;
   width: 1013px;
   height: 445px;
-  top: 860px;
+  top: 700px;
   left: 247px;
   border-radius: 15px;
   overflow: hidden;
