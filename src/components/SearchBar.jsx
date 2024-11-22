@@ -15,6 +15,7 @@ const SearchBarContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 0 16px;
+  z-index: 2; /* Header 아래 */
 `;
 
 const SearchInput = styled.input`

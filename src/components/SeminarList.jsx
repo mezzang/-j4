@@ -12,6 +12,7 @@ const SeminarListContainer = styled.div`
   overflow: hidden;
   border: 2px solid #edbdbd;
   box-shadow: 0px 6px 4px #d8baa4;
+  z-index: 0; /* 가장 아래 */
 `;
 
 const SeminarHeader = styled.div`

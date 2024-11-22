@@ -7,6 +7,7 @@ const Title = styled.div`
   height: 191px;
   top: 277px;
   left: 244px;
+  z-index: 3; /* 항상 최상단 */
 `;
 
 const Image = styled.img`
