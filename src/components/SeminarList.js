@@ -1,1 +1,0 @@
-// KNU_SEMINAR/src/components/SeminarList.js
