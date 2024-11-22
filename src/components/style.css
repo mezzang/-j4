@@ -111,3 +111,86 @@
     top: 11px;
     width: 34px;
 }
+
+.filter-day-list *, .filter-time-list *, .filter-place-list *, .filter-category-list *, .filter-else-list *{
+    font-family: "Inder-Regular", Helvetica;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+    inline-size: min-content;
+}
+
+.filter-day-list, .filter-time-list, .filter-place-list, .filter-category-list, .filter-else-list{
+    margin : 10 auto;
+}
+
+.d-mon {
+    background-color : #ff9d8e;
+    border-radius : 9999px;
+}
+.d-tue {
+    background-color : #FFAC9F;
+    border-radius : 9999px;
+}
+.d-wed {
+    background-color : #FFB8AD;
+    border-radius : 9999px;
+}
+.d-thu {
+    background-color : #FFC2B9;
+    border-radius : 9999px;
+}
+.d-fri {
+    background-color : #FFCBC3;
+    border-radius : 9999px;
+}
+.d-sat {
+    background-color : #FFD3CC;
+    border-radius : 9999px;
+}
+.d-sun {
+    background-color : #FFD9D3;
+    border-radius : 9999px;
+}
+
+.t-9-10 {
+    background-color : #FFD69D;
+    border-radius : 9999px;
+}
+.t-10-11 {
+    background-color : #FFDCAC;
+    border-radius : 9999px;
+}
+.t-11-12 {
+    background-color : #FFE1B8;
+    border-radius : 9999px;
+}
+.t-12-1 {
+    background-color : #FFD69D;
+    border-radius : 9999px;
+}
+.t-1-2 {
+    background-color : #FFE9CB;
+    border-radius : 9999px;
+}
+.t-2-3 {
+    background-color : #FFECD3;
+    border-radius : 9999px;
+}
+.t-3-4 {
+    background-color : #FFEFD9;
+    border-radius : 9999px;
+}
+.t-4-5 {
+    background-color : #FFF1DE;
+    border-radius : 9999px;
+}
+.t-5-6 {
+    background-color : #FFF3E3;
+    border-radius : 9999px;
+}
+.t-6- {
+    background-color : #FFF5E7;
+    border-radius : 9999px;
+}

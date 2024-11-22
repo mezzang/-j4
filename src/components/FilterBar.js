@@ -41,6 +41,7 @@ const FilterBar = () => {
                     <div className="p-global">글로벌 플라자</div>
                     <div className="p-gyeong">경상대</div>
                     <div className="p-engineering">공대</div>
+                    <div className="p-else"></div>
                 </div>
             </div>
 
