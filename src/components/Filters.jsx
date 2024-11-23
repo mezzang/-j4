@@ -26,7 +26,7 @@ const SectionTitle = styled.h3`
   width: 100px; /* 고정 너비 */
   background-color: #fef1f1; /* 직사각형 배경색 */
   color: #000;
-  font-family: "Inder-Regular", Helvetica, sans-serif;
+  font-family: "SUITE-Regular", sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-align: center; /* 텍스트 가운데 정렬 */
@@ -48,7 +48,7 @@ const TagGroup = styled.div`
 const Tag = styled.div`
   background-color: ${(props) => props.bgColor || "#e8f5ff"};
   color: #000;
-  font-family: "Inder-Regular", Helvetica, sans-serif;
+  font-family: "SUITE-Regular"sans-serif;
   font-size: 17px;
   font-weight: 400;
   padding: 6px 12px;
