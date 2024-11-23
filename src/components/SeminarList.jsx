@@ -13,6 +13,7 @@ const ListContainer = styled.div`
   transform: translateX(-50%); /* 정확한 중앙 정렬 */
   border-radius: 15px;
   overflow: hidden;
+  background-color: #fffbf6;
   overflow-y: auto; /* 콘텐츠가 넘칠 경우 세로 스크롤 추가 */
   border: 2px solid #edbdbd;
   box-shadow: 0px 6px 4px #d8baa4;
