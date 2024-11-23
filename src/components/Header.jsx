@@ -7,7 +7,7 @@ const Title = styled.div`
   width: 1002px;
   height: 191px;
   top: 77px;
-  left: 244px;
+  left: 524px;
   z-index: 3; /* 항상 최상단 */
 `;
 

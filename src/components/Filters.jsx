@@ -9,20 +9,20 @@ const FiltersContainer = styled.div`
   width: 1002px;
   height: 219px;
   top: 420px;
-  left: 330px;
+  left: 610px;
   z-index: 1; /* SearchBar 아래 */
 `;
 // 태그 사이 위아래 간격
 const FilterSection = styled.div`
   display: flex;  //두 요소를 가로로 배치
   align-items: center; /* 세로 정렬 */
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 `;
 
 // 요일, 시간, 장소
 const SectionTitle = styled.h3`
   width: 100px; /* 고정 너비 */
-  background-color: #FFFFFF; /* 직사각형 배경색 */
+  background-color: #FEF1F1; /* 직사각형 배경색 */
   color: #000;
   font-family: "Inder-Regular", Helvetica, sans-serif;
   font-size: 15px;
@@ -32,6 +32,7 @@ const SectionTitle = styled.h3`
   border-radius: 12px; /* 덜 둥근 모양 */
   margin-right: 20px; /* TagGroup과 간격 */
   white-space: nowrap; /* 제목이 여러 줄로 넘어가지 않도록 */
+  border: 1px solid #FFD9D9;
 `;
 
 // 태그 사이 간격

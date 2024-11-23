@@ -4,8 +4,8 @@ import styled from "styled-components";
 // 스타일 정의
 const ChosenTagContainer = styled.div`
   position: absolute; /* 위치 지정 */
-  top: 635px; /* 위쪽에서의 거리 */
-  left: 290px; /* 왼쪽에서의 거리 */
+  top: 645px; /* 위쪽에서의 거리 */
+  left: 570px; /* 왼쪽에서의 거리 */
   width: 859px; /* 컨테이너 너비 */
   height: auto; /* 높이를 내용에 맞게 조정 */
   display: flex; /* 태그를 가로로 나열 */

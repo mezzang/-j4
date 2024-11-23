@@ -32,15 +32,15 @@ const GlobalStyles = createGlobalStyle`
     }
   }
     .frame {
-  position: absolute;
-  width: 1440px;
-  height: 942px;
-  top: 0;
-  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); /* 그라데이션 효과 */
-  border-radius: 0px 0px 600px 600px; /* 하단 모서리에 곡선 추가 */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
-  z-index: -1; /* 다른 모든 요소 뒤로 배치 */
-}
+    position: absolute;
+    width: 2000px; /* 기존보다 더 크게 설정 */
+    height: 800px; /* 높이도 조정 */
+    top: -50px; /* 위쪽에서 조금 더 내려옴 */
+    left: -280px; /* 왼쪽으로 치우쳐서 중심 조정 */
+    background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); /* 그라데이션 효과 */
+    border-radius: 0px 0px 800px 800px; /* 더 부드러운 곡선 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+    z-index: -1; /* 다른 모든 요소 뒤로 배치 */}
 
 `;
 
