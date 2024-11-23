@@ -22,6 +22,7 @@ const SearchBarContainer = styled.div`
 const SearchInput = styled.input`
   flex: 1;
   border: none;
+  outline: none;
   font-size: 18px;
   padding: 8px;
 `;
@@ -48,5 +49,7 @@ function SearchBar() {
     </SearchBarContainer>
   );
 }
+
+
 
 export default SearchBar;

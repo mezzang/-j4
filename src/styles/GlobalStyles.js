@@ -5,18 +5,20 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
 
   body {
     font-family: ${({ theme }) => theme.fonts.body};
     background-color: ${({ theme }) => theme.colors.background};
     overflow-x: hidden;
+    touch-action: manipulation;
   }
 
   .desktop {
     position: relative;
-    width: 100%;
-    max-width: 1440px; /* 최대 크기 */
+    width: auto;
+    /* 최대 크기 */
     height: auto;
     margin: 0 auto; /* 중앙 정렬 */
     background-color: #ffffff;
@@ -27,13 +29,14 @@ const GlobalStyles = createGlobalStyle`
   /* 반응형 처리 */
   @media (max-width: 768px) {
     .desktop {
+      width: 100%
       padding: 16px; /* 모바일에서 내부 여백 추가 */
       border-radius: 0; /* 둥근 모서리 제거 */
     }
   }
     .frame {
   position: absolute;
-  width: 1440px;
+  width: calc(100vw - 17px);
   height: 942px;
   top: 0;
   background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); /* 그라데이션 효과 */
