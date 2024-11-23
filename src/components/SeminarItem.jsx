@@ -26,8 +26,8 @@ function SeminarItem({ id, title, author, category, date }) {
   return (
     <SeminarRow>
       <Cell flex="0.5">{id}</Cell>
-      <Cell flex="3">{title}</Cell>
-      <Cell flex="1.5">{author}</Cell>
+      <Cell flex="3.5">{title}</Cell>
+      <Cell flex="1">{author}</Cell>
       <Cell flex="2">{category}</Cell>
       <Cell flex="1.5">{date}</Cell>
     </SeminarRow>

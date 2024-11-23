@@ -7,8 +7,9 @@ const SearchBarContainer = styled.div`
   position: absolute;
   width: 847px;
   height: 56px;
-  top: 340px;
-  left: 330px;
+  top: 340px; /* 위쪽에서의 거리 */
+  left: 50%; /* 부모 요소의 50% 지점 */
+  transform: translateX(-50%); /* 가운데 정렬 */
   background-color: #ffffff;
   border-radius: 90px;
   border: 1px solid #a64040;
