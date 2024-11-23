@@ -17,22 +17,21 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
     width: 100%;
     max-width: 1440px; /* 최대 크기 */
-    height: auto;
+    height: 2100px;
     margin: 0 auto; /* 중앙 정렬 */
-    background-color: #ffffff;
-    border-radius: 0px 0px 400px 400px; /* 하단 모서리 둥글게 */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 */
+    background-color: #fae8dc;
     z-index: 1; /* 컴포넌트들이 보이도록 설정 */
     padding: 20px; /* 내부 컴포넌트 여백 */
+    
   }
 
   /* frame은 배경으로만 동작 */
   .frame {
     position: absolute;
-    width: 2100px; /* 기존보다 더 크게 설정 */
-    height: 800px; /* 높이도 조정 */
-    top: -50px; /* 위쪽에서 조금 더 내려옴 */
-    left: -330px; /* 왼쪽으로 치우쳐서 중심 조정 */
+    width: 2300px; /* 기존보다 더 크게 설정 */
+    height: 1000px; /* 높이도 조정 */
+    top: -10px; /* 위쪽에서 조금 더 내려옴 */
+    left: -430px; /* 왼쪽으로 치우쳐서 중심 조정 */
     background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); /* 그라데이션 효과 */
     border-radius: 0px 0px 800px 800px; /* 더 부드러운 곡선 */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
