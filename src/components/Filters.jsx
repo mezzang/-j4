@@ -18,7 +18,7 @@ const FiltersContainer = styled.div`
 const FilterSection = styled.div`
   display: flex; /* 두 요소를 가로로 배치 */
   align-items: center; /* 세로 정렬 */
-  margin-bottom: 12px; /* 각 섹션 간 간격 */
+  margin-bottom: 9px; /* 각 섹션 간 간격 */
 `;
 
 // 요일, 시간, 장소
@@ -27,7 +27,7 @@ const SectionTitle = styled.h3`
   background-color: #fef1f1; /* 직사각형 배경색 */
   color: #000;
   font-family: "Inder-Regular", Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   text-align: center; /* 텍스트 가운데 정렬 */
   padding: 8px 12px; /* 텍스트 안쪽 여백 */
@@ -49,7 +49,7 @@ const Tag = styled.div`
   background-color: ${(props) => props.bgColor || "#e8f5ff"};
   color: #000;
   font-family: "Inder-Regular", Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   padding: 6px 12px;
   border-radius: 9999px;
