@@ -60,20 +60,34 @@ const Tag = styled.div`
 `;
 
 // Functional Components
-function Filters() {
+function Filters({ onTagSelect }) {
   return (
     <FiltersContainer>
       {/* 요일 섹션 */}
       <FilterSection>
         <SectionTitle>요일</SectionTitle>
         <TagGroup>
-          <Tag bgColor="#ff9d8e">월</Tag>
-          <Tag bgColor="#ffac9f">화</Tag>
-          <Tag bgColor="#ffb8ad">수</Tag>
-          <Tag bgColor="#ffc2b9">목</Tag>
-          <Tag bgColor="#ffcbc3">금</Tag>
-          <Tag bgColor="#ffd3cc">토</Tag>
-          <Tag bgColor="#ffd9d3">일</Tag>
+          <Tag onClick={() => onTagSelect("월")} bgColor="#ff9d8e">
+            월
+          </Tag>
+          <Tag onClick={() => onTagSelect("화")} bgColor="#ffac9f">
+            화
+          </Tag>
+          <Tag onClick={() => onTagSelect("수")} bgColor="#ffb8ad">
+            수
+          </Tag>
+          <Tag onClick={() => onTagSelect("목")} bgColor="#ffc2b9">
+            목
+          </Tag>
+          <Tag onClick={() => onTagSelect("금")} bgColor="#ffcbc3">
+            금
+          </Tag>
+          <Tag onClick={() => onTagSelect("토")} bgColor="#ffd3cc">
+            토
+          </Tag>
+          <Tag onClick={() => onTagSelect("일")} bgColor="#ffd9d3">
+            일
+          </Tag>
         </TagGroup>
       </FilterSection>
 
@@ -81,16 +95,36 @@ function Filters() {
       <FilterSection>
         <SectionTitle>시간</SectionTitle>
         <TagGroup>
-          <Tag bgColor="#ffd69d">9-10</Tag>
-          <Tag bgColor="#ffdcac">10-11</Tag>
-          <Tag bgColor="#ffe1b8">11-12</Tag>
-          <Tag bgColor="#ffe5c2">12-1</Tag>
-          <Tag bgColor="#ffe9cb">1-2</Tag>
-          <Tag bgColor="#ffecd3">2-3</Tag>
-          <Tag bgColor="#ffefd9">3-4</Tag>
-          <Tag bgColor="#fff1de">4-5</Tag>
-          <Tag bgColor="#fff3e3">5-6</Tag>
-          <Tag bgColor="#fff5e7">6시 이후</Tag>
+          <Tag onClick={() => onTagSelect("9-10")} bgColor="#ffd69d">
+            9-10
+          </Tag>
+          <Tag onClick={() => onTagSelect("10-11")} bgColor="#ffdcac">
+            10-11
+          </Tag>
+          <Tag onClick={() => onTagSelect("11-12")} bgColor="#ffe1b8">
+            11-12
+          </Tag>
+          <Tag onClick={() => onTagSelect("12-1")} bgColor="#ffe5c2">
+            12-1
+          </Tag>
+          <Tag onClick={() => onTagSelect("1-2")} bgColor="#ffe9cb">
+            1-2
+          </Tag>
+          <Tag onClick={() => onTagSelect("2-3")} bgColor="#ffecd3">
+            2-3
+          </Tag>
+          <Tag onClick={() => onTagSelect("3-4")} bgColor="#ffefd9">
+            3-4
+          </Tag>
+          <Tag onClick={() => onTagSelect("4-5")} bgColor="#fff1de">
+            4-5
+          </Tag>
+          <Tag onClick={() => onTagSelect("5-6")} bgColor="#fff3e3">
+            5-6
+          </Tag>
+          <Tag onClick={() => onTagSelect("6시 이후")} bgColor="#fff5e7">
+            6시 이후
+          </Tag>
         </TagGroup>
       </FilterSection>
 
@@ -98,10 +132,18 @@ function Filters() {
       <FilterSection>
         <SectionTitle>장소</SectionTitle>
         <TagGroup>
-          <Tag bgColor="#fff1ac">IT대</Tag>
-          <Tag bgColor="#fff3b9">글로벌 플라자</Tag>
-          <Tag bgColor="#fff5c3">경상대</Tag>
-          <Tag bgColor="#fff5c3">공대</Tag>
+          <Tag onClick={() => onTagSelect("IT대")} bgColor="#fff1ac">
+            IT대
+          </Tag>
+          <Tag onClick={() => onTagSelect("글로벌 플라자")} bgColor="#fff3b9">
+            글로벌 플라자
+          </Tag>
+          <Tag onClick={() => onTagSelect("경상대")} bgColor="#fff5c3">
+            경상대
+          </Tag>
+          <Tag onClick={() => onTagSelect("공대")} bgColor="#fff5c3">
+            공대
+          </Tag>
         </TagGroup>
       </FilterSection>
 
@@ -109,15 +151,33 @@ function Filters() {
       <FilterSection>
         <SectionTitle>카테고리</SectionTitle>
         <TagGroup>
-          <Tag bgColor="#b1dfff">진로/취업</Tag>
-          <Tag bgColor="#bce4ff">4차 산업</Tag>
-          <Tag bgColor="#c6e8ff">교양</Tag>
-          <Tag bgColor="#ceebff">멘토링</Tag>
-          <Tag bgColor="#d5eeff">경진대회</Tag>
-          <Tag bgColor="#dbf0ff">네트워킹</Tag>
-          <Tag bgColor="#e0f2ff">창업</Tag>
-          <Tag bgColor="#e4f4ff">전공심화</Tag>
-          <Tag bgColor="#e8f5ff">국제 교류</Tag>
+          <Tag onClick={() => onTagSelect("진로/취업")} bgColor="#b1dfff">
+            진로/취업
+          </Tag>
+          <Tag onClick={() => onTagSelect("4차 산업")} bgColor="#bce4ff">
+            4차 산업
+          </Tag>
+          <Tag onClick={() => onTagSelect("교양")} bgColor="#c6e8ff">
+            교양
+          </Tag>
+          <Tag onClick={() => onTagSelect("멘토링")} bgColor="#ceebff">
+            멘토링
+          </Tag>
+          <Tag onClick={() => onTagSelect("경진대회")} bgColor="#d5eeff">
+            경진대회
+          </Tag>
+          <Tag onClick={() => onTagSelect("네트워킹")} bgColor="#dbf0ff">
+            네트워킹
+          </Tag>
+          <Tag onClick={() => onTagSelect("창업")} bgColor="#e0f2ff">
+            창업
+          </Tag>
+          <Tag onClick={() => onTagSelect("전공심화")} bgColor="#e4f4ff">
+            전공심화
+          </Tag>
+          <Tag onClick={() => onTagSelect("국제 교류")} bgColor="#e8f5ff">
+            국제 교류
+          </Tag>
         </TagGroup>
       </FilterSection>
 
@@ -125,10 +185,18 @@ function Filters() {
       <FilterSection>
         <SectionTitle>기타</SectionTitle>
         <TagGroup>
-          <Tag bgColor="#d6cdff">식사 제공</Tag>
-          <Tag bgColor="#ddd5ff">사전 신청</Tag>
-          <Tag bgColor="#e2dbff">무료</Tag>
-          <Tag bgColor="#e6e0ff">유료</Tag>
+          <Tag onClick={() => onTagSelect("식사 제공")} bgColor="#d6cdff">
+            식사 제공
+          </Tag>
+          <Tag onClick={() => onTagSelect("사전 신청")} bgColor="#ddd5ff">
+            사전 신청
+          </Tag>
+          <Tag onClick={() => onTagSelect("무료")} bgColor="#e2dbff">
+            무료
+          </Tag>
+          <Tag onClick={() => onTagSelect("유료")} bgColor="#e6e0ff">
+            유료
+          </Tag>
         </TagGroup>
       </FilterSection>
     </FiltersContainer>
@@ -136,3 +204,4 @@ function Filters() {
 }
 
 export default Filters;
+

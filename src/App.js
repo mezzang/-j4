@@ -8,26 +8,33 @@ import SeminarList from "./components/SeminarList";
 import Footer from "./components/Footer";
 
 function App() {
-  const [selectedTags, setSelectedTags] = useState(["진로/취업", "식사 제공"]);
+  const [selectedTags, setSelectedTags] = useState([]);
 
-  // 태그 삭제 함수
+  // 태그 선택 핸들러
+  const handleTagSelect = (tag) => {
+    if (!selectedTags.includes(tag)) {
+      setSelectedTags((prevTags) => [...prevTags, tag]);
+    }
+  };
+
+  // 태그 삭제 핸들러
   const handleRemoveTag = (tag) => {
-    setSelectedTags(selectedTags.filter((t) => t !== tag));
+    setSelectedTags((prevTags) => prevTags.filter((t) => t !== tag));
   };
 
   return (
     <div className="desktop">
-        <div className="frame">
-          <Header />
-          <SearchBar />
-          <Filters />
-          {/* 선택된 태그를 보여주는 컴포넌트 */}
-          <ChosenTag tags={selectedTags} onRemove={handleRemoveTag} />
-          <SeminarList />
-          <Footer />
-        </div>
+      <div className="frame">
+        <Header />
+        <SearchBar />
+        <Filters onTagSelect={handleTagSelect} />
+        <ChosenTag tags={selectedTags} onRemove={handleRemoveTag} />
+        <SeminarList selectedTags={selectedTags} />
+        <Footer />
+      </div>
     </div>
   );
 }
 
 export default App;
+

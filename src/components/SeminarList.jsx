@@ -95,7 +95,11 @@ const seminars = [
   { id: 232, title: "신재생 에너지 세미나", category: "4차산업", date: "2024.12.21." },
 ];
 
-function SeminarList() {
+function SeminarList({ selectedTags }) {
+  const filteredSeminars = seminars.filter((seminar) =>
+    selectedTags.every((tag) => seminar.category.includes(tag))
+  );
+
   return (
     <ListContainer>
       {/* Header */}
@@ -106,7 +110,7 @@ function SeminarList() {
         <HeaderCell flex="1.5">작성날짜</HeaderCell>
       </HeaderRow>
       {/* Seminar Items */}
-      {seminars.map((seminar) => (
+      {filteredSeminars.map((seminar) => (
         <SeminarItem key={seminar.id} {...seminar} />
       ))}
     </ListContainer>
