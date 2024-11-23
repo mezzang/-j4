@@ -4,7 +4,7 @@ import styled from "styled-components";
 // 스타일 정의
 const ChosenTagContainer = styled.div`
   position: absolute; /* 위치 지정 */
-  top: 640px; /* 위쪽에서의 거리 */
+  top: 635px; /* 위쪽에서의 거리 */
   left: 290px; /* 왼쪽에서의 거리 */
   width: 859px; /* 컨테이너 너비 */
   height: auto; /* 높이를 내용에 맞게 조정 */
@@ -19,7 +19,7 @@ const ChosenTagContainer = styled.div`
 const Tag = styled.div`
   display: flex;
   align-items: center; /* 텍스트와 닫기 버튼 수직 정렬 */
-  padding: 8px 15px; /* 텍스트 주변 여백 */
+  padding: 10px 15px; /* 텍스트 주변 여백 */
   background-color: #D8D8D8; /* 태그 배경색 */
   color: #000000; /* 텍스트 색상 */
   font-size: 14px; /* 텍스트 크기 */
