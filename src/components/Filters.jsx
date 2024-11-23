@@ -48,7 +48,7 @@ const TagGroup = styled.div`
 const Tag = styled.div`
   background-color: ${(props) => props.bgColor || "#e8f5ff"};
   color: #000;
-  font-family: "SUITE-Regular"sans-serif;
+  font-family: "SUITE-Regular", sans-serif;
   font-size: 17px;
   font-weight: 400;
   padding: 6px 12px;
