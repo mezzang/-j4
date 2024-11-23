@@ -28,7 +28,7 @@ const HeaderCell = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Inder-Regular", Helvetica, sans-serif;
+  font-family: "SUITE-Regular", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #000000;

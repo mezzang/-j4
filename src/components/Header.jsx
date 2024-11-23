@@ -27,19 +27,21 @@ const OverlapGroup = styled.div`
   left: 277px;
 `;
 
+
 const Name = styled.div`
   width: 461px;
   -webkit-text-stroke: 2px #a64040;
-  font-family: "Jersey 20-Regular", Helvetica, sans-serif;
+  font-family: 'bitbit', sans-serif;
   font-weight: 400;
   color: #f9f235;
   font-size: 105px;
   white-space: nowrap;
+  
 `;
 // knu 마크
 const Knumark = styled.div`
   width: 211px;
-  font-family: "Ink Free-Regular", Helvetica, sans-serif;
+  font-family: "Paperlogy-8ExtraBold", sans-serif;
   font-weight: 400;
   color: #de0404;
   font-size: 25px;
@@ -48,7 +50,7 @@ const Knumark = styled.div`
 // sub title
 const Subtitle = styled.div`
   width: 62px;
-  font-family: "Jaro-Regular", Helvetica, sans-serif;
+  font-family: "Cafe24Decoschool", sans-serif;
   font-weight: 400;
   color: #fd2323;
   font-size: 30px;

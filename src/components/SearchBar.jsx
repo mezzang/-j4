@@ -25,6 +25,7 @@ const SearchInput = styled.input`
   outline: none;
   font-size: 18px;
   padding: 8px;
+  font-family: "SUITE-Regular", sans-serif;
 `;
 
 const SearchButton = styled.button`

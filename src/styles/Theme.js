@@ -10,7 +10,7 @@ const theme = {
       highlight: "#ffd69d",
     },
     fonts: {
-      body: "'Inder-Regular', Helvetica, sans-serif",
+      body: "'SUITE-Regular', sans-serif",
       header: "'Jersey 20-Regular', Helvetica, sans-serif",
     },
   };
