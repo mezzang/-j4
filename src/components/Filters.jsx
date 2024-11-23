@@ -7,24 +7,22 @@ import styled from "styled-components";
 const FiltersContainer = styled.div`
   position: absolute;
   width: 1002px;
-  height: auto; /* 높이를 내용에 맞게 조정 */
+  height: 219px;
   top: 420px;
-  left: 50%; /* 부모 요소 기준으로 50% 이동 */
-  transform: translateX(-50%); /* 가운데 정렬 */
+  left: 330px;
   z-index: 1; /* SearchBar 아래 */
 `;
-
 // 태그 사이 위아래 간격
 const FilterSection = styled.div`
-  display: flex; /* 두 요소를 가로로 배치 */
+  display: flex;  //두 요소를 가로로 배치
   align-items: center; /* 세로 정렬 */
-  margin-bottom: 9px; /* 각 섹션 간 간격 */
+  margin-bottom: 8px;
 `;
 
 // 요일, 시간, 장소
 const SectionTitle = styled.h3`
   width: 100px; /* 고정 너비 */
-  background-color: #fef1f1; /* 직사각형 배경색 */
+  background-color: #FFFFFF; /* 직사각형 배경색 */
   color: #000;
   font-family: "SUITE-Regular", sans-serif;
   font-size: 15px;
@@ -34,15 +32,14 @@ const SectionTitle = styled.h3`
   border-radius: 12px; /* 덜 둥근 모양 */
   margin-right: 20px; /* TagGroup과 간격 */
   white-space: nowrap; /* 제목이 여러 줄로 넘어가지 않도록 */
-  border: 1px solid #ffd9d9; /* 테두리 색상 */
 `;
 
 // 태그 사이 간격
-// 태그들을 감싸는 그룹
+//태그들을 감싸는 그룹 
 const TagGroup = styled.div`
   display: flex;
-  flex-wrap: wrap; /* 태그가 화면 너비 초과하면 자동으로 줄바꿈 */
-  gap: 8px; /* 위아래 간격 */
+  flex-wrap: wrap; //태그가 화면 너비 초과하면 자동으로 줄바꿈
+  gap: 8px; //위 아래 간격
 `;
 
 const Tag = styled.div`
