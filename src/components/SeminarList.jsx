@@ -95,21 +95,22 @@ const seminars = [
   { id: 232, title: "신재생 에너지 세미나", category: "4차산업", date: "2024.12.21." },
 ];
 
-function SeminarList({ selectedTags }) {
-  const filteredSeminars = seminars.filter((seminar) =>
-    selectedTags.every((tag) => seminar.category.includes(tag))
-  );
+function SeminarList({ selectedTags, searchTerm }) {
+  const filteredSeminars = seminars.filter((seminar) => {
+    const matchesSearch = seminar.title.toLowerCase().includes(searchTerm);
+    const matchesTags =
+      selectedTags.length === 0 || selectedTags.every((tag) => seminar.category.includes(tag));
+    return matchesSearch && matchesTags;
+  });
 
   return (
     <ListContainer>
-      {/* Header */}
       <HeaderRow>
         <HeaderCell flex="0.5">번호</HeaderCell>
         <HeaderCell flex="4">제목</HeaderCell>
         <HeaderCell flex="2">카테고리</HeaderCell>
         <HeaderCell flex="1.5">작성날짜</HeaderCell>
       </HeaderRow>
-      {/* Seminar Items */}
       {filteredSeminars.map((seminar) => (
         <SeminarItem key={seminar.id} {...seminar} />
       ))}
