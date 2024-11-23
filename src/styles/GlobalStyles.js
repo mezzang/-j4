@@ -22,6 +22,21 @@ const GlobalStyles = createGlobalStyle`
     background-color: #ffffff;
     border-radius: 0px 0px 400px 400px; /* 하단 모서리 둥글게 */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 */
+    z-index: 1; /* 컴포넌트들이 보이도록 설정 */
+    padding: 20px; /* 내부 컴포넌트 여백 */
+  }
+
+  /* frame은 배경으로만 동작 */
+  .frame {
+    position: absolute;
+    width: 2100px; /* 기존보다 더 크게 설정 */
+    height: 800px; /* 높이도 조정 */
+    top: -50px; /* 위쪽에서 조금 더 내려옴 */
+    left: -330px; /* 왼쪽으로 치우쳐서 중심 조정 */
+    background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); /* 그라데이션 효과 */
+    border-radius: 0px 0px 800px 800px; /* 더 부드러운 곡선 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+    z-index: -1; /* 다른 모든 요소 뒤로 배치 */
   }
 
   /* 반응형 처리 */
@@ -31,17 +46,6 @@ const GlobalStyles = createGlobalStyle`
       border-radius: 0; /* 둥근 모서리 제거 */
     }
   }
-    .frame {
-    position: absolute;
-    width: 2000px; /* 기존보다 더 크게 설정 */
-    height: 800px; /* 높이도 조정 */
-    top: -50px; /* 위쪽에서 조금 더 내려옴 */
-    left: -280px; /* 왼쪽으로 치우쳐서 중심 조정 */
-    background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%); /* 그라데이션 효과 */
-    border-radius: 0px 0px 800px 800px; /* 더 부드러운 곡선 */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
-    z-index: -1; /* 다른 모든 요소 뒤로 배치 */}
-
 `;
 
 export default GlobalStyles;

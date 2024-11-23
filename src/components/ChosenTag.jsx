@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 // 스타일 정의
 const ChosenTagContainer = styled.div`
-  position: absolute; /* 위치 지정 */
-  top: 645px; /* 위쪽에서의 거리 */
-  left: 570px; /* 왼쪽에서의 거리 */
+  position: absolute;
+  top: 650px; /* 위쪽에서의 거리 */
+  left: 50%; /* 부모 요소 기준으로 가로 중앙 */
+  transform: translateX(-50%); /* 가로 중앙 정렬 */
   width: 859px; /* 컨테이너 너비 */
   height: auto; /* 높이를 내용에 맞게 조정 */
   display: flex; /* 태그를 가로로 나열 */
@@ -20,7 +21,7 @@ const Tag = styled.div`
   display: flex;
   align-items: center; /* 텍스트와 닫기 버튼 수직 정렬 */
   padding: 10px 15px; /* 텍스트 주변 여백 */
-  background-color: #D8D8D8; /* 태그 배경색 */
+  background-color: #d8d8d8; /* 태그 배경색 */
   color: #000000; /* 텍스트 색상 */
   font-size: 14px; /* 텍스트 크기 */
   font-weight: 500; /* 글자 두께 */
@@ -30,7 +31,7 @@ const Tag = styled.div`
   box-shadow: none;
 
   &:hover {
-    background-color: #E3E3E3; /* 호버 시 배경색 변경 */
+    background-color: #e3e3e3; /* 호버 시 배경색 변경 */
   }
 
   span {

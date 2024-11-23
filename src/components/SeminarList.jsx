@@ -5,11 +5,12 @@ import SeminarItem from "./SeminarItem";
 
 // Styled Components for SeminarList
 const ListContainer = styled.div`
-  position: absolute;
+  position: absolute; /* 위치 지정 */
   width: 1013px;
   height: 445px;
-  top: 705px;
-  left: 527px;
+  top: 705px; /* 화면 위쪽에서의 거리 */
+  left: 50%; /* 가로 방향 중앙 정렬 */
+  transform: translateX(-50%); /* 정확한 중앙 정렬 */
   border-radius: 15px;
   overflow: hidden;
   border: 2px solid #edbdbd;

@@ -7,12 +7,13 @@ const Title = styled.div`
   width: 1002px;
   height: 191px;
   top: 77px;
-  left: 524px;
+  left: 50%; /* 부모의 50% */
+  transform: translateX(-50%); /* 가운데 정렬 */
   z-index: 3; /* 항상 최상단 */
 `;
 
 const Image = styled.img`
-  position: absolute; //조상요소를 기준으로 위치가 지정
+  position: absolute;
   width: 121px;
   height: 150px;
   top: 50px;
@@ -36,7 +37,7 @@ const Name = styled.div`
   font-size: 105px;
   white-space: nowrap;
 `;
-// knu 마크
+
 const Knumark = styled.div`
   width: 211px;
   font-family: "Ink Free-Regular", Helvetica, sans-serif;
@@ -45,7 +46,6 @@ const Knumark = styled.div`
   font-size: 25px;
 `;
 
-// sub title
 const Subtitle = styled.div`
   width: 62px;
   font-family: "Jaro-Regular", Helvetica, sans-serif;
@@ -58,16 +58,15 @@ const Subtitle = styled.div`
 function Header() {
   return (
     // 전체 헤더를 감싸는 컨테이너
-    <Title>  
+    <Title>
       <Image src="호반우.png" alt="호반우" />
-      <OverlapGroup>  
+      <OverlapGroup>
         <Knumark>KNU</Knumark>
         <Name>Seminar.zip</Name>
         <div className="KNU-MARK">
-            <Subtitle>for knu_it students</Subtitle>
+          <Subtitle>for knu_it students</Subtitle>
         </div>
       </OverlapGroup>
-      
     </Title>
   );
 }
